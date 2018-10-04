@@ -1,3 +1,57 @@
+/*
+COLORS
+Header: #2D3945
+Background: #FFFFFF
+Text Inputs: #EFF0F1
+Signup Button: #4EBBB5
+*/
 * {
   font-family: 'Merriweather', serif;
+  margin: 0;
+  padding: 0;
+  color: #2D3945;
+}
+
+p {
+  font-weight: 300;
+}
+
+header h1 {
+  background: #2D3945;
+  color: white;
+  text-align: center;
+  padding: 40px 0;
+  text-transform: uppercase;
+}
+
+.header-hr-style {
+  border-top: 5px #2D3945 solid;
+  height: 4px;
+  border-bottom: 2px #2D3945 solid;
+  border-left: 0;
+  boder-right: 0;
+}
+
+main,
+footer {
+  padding: 0 40px;
+}
+
+.introduction {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.introduction p {
+  color: #999;
+  margin-top: 15px;
+  line-height: 1.5;
+}
+
+footer p {
+  text-align: center;
+  font-weight: 400;
+  font-style: italic;
+  color: #999;
+  margin-top: 50px;
 }
