@@ -21,7 +21,7 @@
     </div>
     <hr class="header-hr-style">
     <form>
-      <fieldset>
+      <fieldset class="infosection">
         <legend>Contact Information</legend>
         <div class="form-slot">
           <label for="name">Full Name</label>
@@ -46,6 +46,7 @@
         <div class="form-slot">
           <label for="state">State</label>
           <select id="state" name="user_state">
+            <option value="" disabled selected hidden>Select State</option>
             <option value="nsw">New South Wales</option>
             <option value="act">Australian Capital Territory</option>
             <option value="qld">Queensland</option>
@@ -61,20 +62,34 @@
           <input type="text" id="postcode" name="user_postcode">
         </div>
       </fieldset>
-      <fieldset>
+      <hr class="mid-form-hr">
+      <fieldset class="newslettersection">
         <legend>Newsletter</legend>
-
-        <label>Select the newsletters you would like to recieve</label>
-        <input type="checkbox" id="html-news" value="html-news" name="user-newsletters"><label for="html-news">HTML News</label>
-        <input type="checkbox" id="css-news" value="css-news" name="user-newsletters"><label for="css-news">CSS News</label>
-        <input type="checkbox" id="js-news" value="js-news" name="user-newsletters"><label for="js-news">Javascript News</label>
-
-        <label>Newsletter format</label>
-        <input type="radio" id="html-format" value="html-format" name="user-newsletter-format"><label for="html-format">HTML</label>
-        <input type="radio" id="plaintext-format" value="plaintext-format" name="user-newsletter-format"><label for="plaintext-format">Plain text</label>
-
-        <label for="othertopics">Other topics you'd like to hear about</label>
-        <textarea id="othertopics" name="user-othertopics"></textarea>
+        <div class="form-slot newslettertype">
+          <label>Select the newsletters you would like to recieve</label>
+          <div class="newslettertype-option">
+            <input type="checkbox" id="html-news" value="html-news" name="user-newsletters"><label for="html-news">HTML News</label>
+          </div>
+          <div class="newslettertype-option">
+            <input type="checkbox" id="css-news" value="css-news" name="user-newsletters"><label for="css-news">CSS News</label>
+          </div>
+          <div class="newslettertype-option">
+            <input type="checkbox" id="js-news" value="js-news" name="user-newsletters"><label for="js-news">Javascript News</label>
+          </div>
+        </div>
+        <div class="form-slot newsletterformat">
+          <label>Newsletter format</label>
+          <div class="newsletterformat-option">
+            <input type="radio" id="html-format" value="html-format" name="user-newsletter-format"><label for="html-format">HTML</label>
+          </div>
+          <div class="newsletterformat-option">
+            <input type="radio" id="plaintext-format" value="plaintext-format" name="user-newsletter-format"><label for="plaintext-format">Plain text</label>
+          </div>
+        </div>
+        <div class="form-slot othertopics">
+          <label for="othertopics">Other topics you'd like to hear about</label>
+          <textarea id="othertopics" name="user-othertopics"></textarea>
+        </div>
       </fieldset>
 
       <button type="submit" method="post">Sign Up</button>

@@ -1,8 +1,10 @@
-/*COLOR VARIABLES*/
-::root {
-  --main-color: #2D3945;
+/*VARIABLES*/
+:root {
+  --main-dark-color: #2D3945;
+  --main-light-color: #46698B;
   --main-background-color: #FFFFFF;
   --main-textinput-color: #EFF0F1;
+  --main-supptext-color: #999;
   --signupbutton-color: #4EBBB5;
 }
 
@@ -10,7 +12,8 @@
   font-family: 'Merriweather', serif;
   margin: 0;
   padding: 0;
-  color: #2D3945;
+  color: var(--main-dark-color);
+  box-sizing: border-box;
 }
 
 p {
@@ -18,7 +21,7 @@ p {
 }
 
 header h1 {
-  background: #2D3945;
+  background: var(--main-dark-color);
   color: white;
   text-align: center;
   padding: 40px 0;
@@ -26,11 +29,15 @@ header h1 {
 }
 
 .header-hr-style {
-  border-top: 5px #2D3945 solid;
-  height: 4px;
-  border-bottom: 2px #2D3945 solid;
+  border-top: 5px var(--main-dark-color) solid;
+  height: 10px;
+  border-bottom: 2px var(--main-dark-color) solid;
   border-left: 0;
-  boder-right: 0;
+  border-right: 0;
+}
+
+.mid-form-hr {
+  border: 1px solid var(--main-dark-color);
 }
 
 main,
@@ -44,16 +51,95 @@ footer {
 }
 
 .introduction p {
-  color: #999;
+  color: var(--main-supptext-color);
   margin-top: 15px;
   line-height: 1.5;
 }
 
 /*Form Styles*/
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form legend {
+  font-weight: 900;
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+}
+
+fieldset {
+  border: 0;
+  margin: 30px 0;
+}
+
+.form-slot {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-slot label {
+  margin-bottom: 5px;
+  color: var(--main-color);
+  font-weight: 300;
+  color: var(--main-light-color)
+}
+
+.form-slot input,
+.form-slot select,
+.form-slot textarea {
+  background-color: var(--main-textinput-color);
+  border: var(--main-textinput-color) 2px solid;
+  border-radius: 4px;
+  padding: 10px 15px;
+}
+
+.form-slot #postcode {
+  max-width: 150px;
+}
+
+.form-slot input:focus,
+.form-slot select:focus,
+.form-slot textarea:focus {
+  outline: none;
+  border: var(--main-light-color) 2px solid;
+}
+
+.form-slot+.form-slot {
+  margin-top: 20px;
+}
+
+.newslettersection {
+  line-height: 1.9;
+}
+
+.newslettertype-option label,
+.newsletterformat-option label {
+  margin-left: 15px;
+}
+
+.newslettersection input[type="checkbox"],
+.newslettersection input[type="radio"] {}
+
+.newslettersection textarea {
+  min-height: 100px;
+}
+
+button {
+  background-color: var(--signupbutton-color);
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  padding: 20px;
+  font-weight: 900;
+  font-size: 1.3rem;
+}
+
 footer p {
   text-align: center;
   font-weight: 400;
   font-style: italic;
   color: #999;
   margin-top: 50px;
+  margin-bottom: 50px;
 }
