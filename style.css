@@ -118,9 +118,6 @@ fieldset {
   margin-left: 15px;
 }
 
-.newslettersection input[type="checkbox"],
-.newslettersection input[type="radio"] {}
-
 .newslettersection textarea {
   min-height: 100px;
 }
