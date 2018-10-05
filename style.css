@@ -1,10 +1,11 @@
-/*
-COLORS
-Header: #2D3945
-Background: #FFFFFF
-Text Inputs: #EFF0F1
-Signup Button: #4EBBB5
-*/
+/*COLOR VARIABLES*/
+::root {
+  --main-color: #2D3945;
+  --main-background-color: #FFFFFF;
+  --main-textinput-color: #EFF0F1;
+  --signupbutton-color: #4EBBB5;
+}
+
 * {
   font-family: 'Merriweather', serif;
   margin: 0;
@@ -48,6 +49,7 @@ footer {
   line-height: 1.5;
 }
 
+/*Form Styles*/
 footer p {
   text-align: center;
   font-weight: 400;
