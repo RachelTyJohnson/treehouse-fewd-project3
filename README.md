@@ -38,8 +38,8 @@
 :ballot_box_with_check: The label text position matches the mockup for both mobile & desktop  
 :ballot_box_with_check: Uses a Google font  
 :ballot_box_with_check: Includes focus states for text fields  
-:ballot_box_with_check::black_square_button: Change the background color for at least one main section  
-:ballot_box_with_check::black_square_button: Use CSS transitions for focus states  
+:ballot_box_with_check::white_check_mark: Change the background color for at least one main section (main header)
+:ballot_box_with_check::white_check_mark: Use CSS transitions for focus states
 
 **Valid Code**  
 :ballot_box_with_check: HTML and cSS code passes validation  

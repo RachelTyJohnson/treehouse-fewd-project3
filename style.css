@@ -97,10 +97,7 @@ fieldset {
   border: #EFF0F2 2px solid;
   border-radius: 4px;
   padding: 10px 15px;
-}
-
-.form-slot #postcode {
-  max-width: 150px;
+  transition: 0.5s;
 }
 
 .form-slot input:focus,
@@ -108,6 +105,12 @@ fieldset {
 .form-slot textarea:focus {
   outline: none;
   border: #46698B 2px solid;
+  box-shadow: 0 0 5px #2D3945;
+  transition: 0.5s;
+}
+
+.form-slot #postcode {
+  max-width: 150px;
 }
 
 .form-slot+.form-slot {
