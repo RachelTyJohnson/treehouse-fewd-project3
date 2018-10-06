@@ -2,7 +2,7 @@
 ## An Online Registration Form  
 
 :ballot_box_with_check: - Meet expectations requirement  
-:ballot_box_with_check: - Exceeds expectations requirement  
+:white_check_mark: - Exceeds expectations requirement  
 
 ---  
 
