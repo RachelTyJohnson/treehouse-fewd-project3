@@ -1,19 +1,18 @@
-/*VARIABLES*/
-:root {
-  --main-dark-color: #2D3945;
-  --main-light-color: #46698B;
-  --main-background-color: #FFFFFF;
-  --main-textinput-color: #EFF0F1;
-  --main-supptext-color: #999;
-  --signupbutton-color: #4EBBB5;
+*::selection {
+  background: #c2f9f6;
 }
 
 * {
-  font-family: 'Merriweather', serif;
+  font-family: 'Chakra Petch', sans-serif;
   margin: 0;
   padding: 0;
-  color: var(--main-dark-color);
+  color: #2D3945;
   box-sizing: border-box;
+}
+
+body {
+  background-image: url(img/background.jpg);
+  background-attachment: fixed;
 }
 
 p {
@@ -21,7 +20,7 @@ p {
 }
 
 header h1 {
-  background: var(--main-dark-color);
+  background-image: linear-gradient(#2D3945 10%, #46698B 140%);
   color: white;
   text-align: center;
   padding: 40px 0;
@@ -29,15 +28,15 @@ header h1 {
 }
 
 .header-hr-style {
-  border-top: 5px var(--main-dark-color) solid;
+  border-top: 5px #2D3945 solid;
   height: 10px;
-  border-bottom: 2px var(--main-dark-color) solid;
+  border-bottom: 2px #2D3945 solid;
   border-left: 0;
   border-right: 0;
 }
 
 .mid-form-hr {
-  border: 1px solid var(--main-dark-color);
+  border: 1px solid #2D3945;
 }
 
 main,
@@ -51,7 +50,7 @@ footer {
 }
 
 .introduction p {
-  color: var(--main-supptext-color);
+  color: #999;
   margin-top: 15px;
   line-height: 1.5;
 }
@@ -63,7 +62,7 @@ form {
 }
 
 form legend {
-  font-weight: 900;
+  font-weight: 700;
   font-size: 1.3rem;
   margin-bottom: 30px;
 }
@@ -80,16 +79,22 @@ fieldset {
 
 .form-slot label {
   margin-bottom: 5px;
-  color: var(--main-color);
+  color: #2D3945;
   font-weight: 300;
-  color: var(--main-light-color)
+  color: #46698B
+}
+
+.form-slot input::placeholder {
+  color: #ccc;
+  text-align: right;
+  font-style: italic;
 }
 
 .form-slot input,
 .form-slot select,
 .form-slot textarea {
-  background-color: var(--main-textinput-color);
-  border: var(--main-textinput-color) 2px solid;
+  background-color: #EFF0F1;
+  border: #EFF0F2 2px solid;
   border-radius: 4px;
   padding: 10px 15px;
 }
@@ -102,7 +107,7 @@ fieldset {
 .form-slot select:focus,
 .form-slot textarea:focus {
   outline: none;
-  border: var(--main-light-color) 2px solid;
+  border: #46698B 2px solid;
 }
 
 .form-slot+.form-slot {
@@ -123,13 +128,14 @@ fieldset {
 }
 
 button {
-  background-color: var(--signupbutton-color);
+  background-color: #4EBBB5;
   color: white;
   border: 0;
   border-radius: 5px;
   padding: 20px;
-  font-weight: 900;
+  font-weight: 700;
   font-size: 1.3rem;
+  cursor: pointer;
 }
 
 footer p {
@@ -139,4 +145,41 @@ footer p {
   color: #999;
   margin-top: 50px;
   margin-bottom: 50px;
+}
+
+@media (min-width:768px) {
+
+  main,
+  footer {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .introduction {
+    padding: 60px;
+  }
+
+  .introduction h2 {
+    font-size: 1.8em;
+  }
+
+  .introduction p {
+    margin-top: 5px;
+  }
+
+  .infosection .form-slot {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .infosection .form-slot label {
+    flex: 1;
+    max-width: 150px;
+    font-weight: 500;
+  }
+
+  .infosection .form-slot input {
+    flex: 3;
+    align-self: flex-start;
+  }
 }
