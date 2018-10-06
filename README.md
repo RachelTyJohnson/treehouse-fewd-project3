@@ -25,8 +25,8 @@
 
 **Placeholder text**  
 :ballot_box_with_check: `input` field's `placeholder` attribute has been used to add "required" to FULL NAME and EMAIL ADDRESS  
-:ballot_box_with_check::black_square_button: Form contains additional placeholder text for other text fields  
-:ballot_box_with_check::black_square_button: Uses the `required` attribute to add HTML5 validation for required fields (email?)  
+:ballot_box_with_check::white_check_mark: Form contains additional placeholder text for other text fields  
+:ballot_box_with_check::white_check_mark: Uses the `required` attribute to add HTML5 validation for required fields (email?)  
 
 **Mobile-first**  
 :ballot_box_with_check: HTML file includes viewport meta tag  

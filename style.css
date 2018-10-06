@@ -10,6 +10,10 @@
   box-sizing: border-box;
 }
 
+main {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
 body {
   background-image: url(img/background.jpg);
   background-attachment: fixed;
@@ -110,7 +114,7 @@ fieldset {
 }
 
 .form-slot #postcode {
-  max-width: 150px;
+  max-width: 219px;
 }
 
 .form-slot+.form-slot {
@@ -139,6 +143,7 @@ button {
   font-weight: 700;
   font-size: 1.3rem;
   cursor: pointer;
+  margin-bottom: 50px;
 }
 
 footer p {
