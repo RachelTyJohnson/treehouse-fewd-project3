@@ -121,10 +121,6 @@ fieldset {
   margin-top: 20px;
 }
 
-.newslettersection {
-  line-height: 1.9;
-}
-
 .newslettertype-option label,
 .newsletterformat-option label {
   margin-left: 15px;
@@ -182,12 +178,11 @@ footer p {
   }
 
   .form-slot label {
-    flex: 1;
     font-weight: 500;
   }
 
   .infosection .form-slot label {
-    max-width: 150px;
+    width: 150px;
   }
 
   .infosection .form-slot input {
