@@ -15,7 +15,7 @@ main {
 }
 
 body {
-  background-image: url(img/background.jpg);
+  background-image: url('../img/bg.jpg');
   background-attachment: fixed;
 }
 
@@ -98,19 +98,22 @@ fieldset {
 .form-slot select,
 .form-slot textarea {
   background-color: #EFF0F1;
-  border: #EFF0F2 2px solid;
+  border: #EFF0F2 1px solid;
   border-radius: 4px;
   padding: 10px 15px;
-  transition: 0.5s;
+  -webkit-appearance: none;
+  /* remove the strong OSX influence from Webkit */
+  transition: border 0.5s, box-shadow 0.3s;
 }
 
 .form-slot input:focus,
 .form-slot select:focus,
 .form-slot textarea:focus {
   outline: none;
-  border: #46698B 2px solid;
-  box-shadow: 0 0 5px #2D3945;
-  transition: 0.5s;
+  border: #46698B 1px solid;
+  -webkit-appearance: none;
+  /* remove the strong OSX influence from Webkit */
+  box-shadow: 0 0 2px #2D3945;
 }
 
 .form-slot #postcode {
