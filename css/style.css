@@ -112,6 +112,11 @@ fieldset {
   box-shadow: 0 0 2px #2D3945;
 }
 
+.form-slot select {
+  webkit-appearance: none;
+  /* remove the strong OSX influence from Webkit */
+}
+
 .form-slot #postcode {
   max-width: 219px;
 }
