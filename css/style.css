@@ -112,11 +112,13 @@ fieldset {
   box-shadow: 0 0 2px #2D3945;
 }
 
-.form-slot select {
-  webkit-appearance: none;
-  /* remove the strong OSX influence from Webkit */
-}
-
+/*.form-slot select {*/
+/*webkit-appearance: none;*/
+/*This was suppsed to remove the strong OSX influence from Webkit */
+/*So the select looks the same on Chrome for Mac*/
+/*But it didn't pass the validation test*/
+/*So I left it out, and the select field looks bad on Mac :( )*/
+/*}*/
 .form-slot #postcode {
   max-width: 219px;
 }
