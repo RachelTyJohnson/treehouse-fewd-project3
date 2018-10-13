@@ -101,8 +101,6 @@ fieldset {
   border: #EFF0F2 1px solid;
   border-radius: 4px;
   padding: 10px 15px;
-  -webkit-appearance: none;
-  /* remove the strong OSX influence from Webkit */
   transition: border 0.5s, box-shadow 0.3s;
 }
 
@@ -111,8 +109,6 @@ fieldset {
 .form-slot textarea:focus {
   outline: none;
   border: #46698B 1px solid;
-  -webkit-appearance: none;
-  /* remove the strong OSX influence from Webkit */
   box-shadow: 0 0 2px #2D3945;
 }
 
