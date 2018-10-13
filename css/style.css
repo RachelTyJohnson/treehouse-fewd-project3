@@ -188,4 +188,17 @@ footer p {
     flex: 3;
     align-self: flex-start;
   }
+
+  .form-slot input,
+  .form-slot select,
+  .form-slot textarea {
+    border: #EFF0F2 2px solid;
+  }
+
+  .form-slot input:focus,
+  .form-slot select:focus,
+  .form-slot textarea:focus {
+    outline: none;
+    border: #46698B 2px solid;
+  }
 }
